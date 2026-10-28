@@ -1,0 +1,41 @@
+# Run the production image locally:
+#   docker compose up --build
+# Or pull the prebuilt image from GHCR:
+#   docker compose pull && docker compose up
+#
+# All env vars are passed through from your shell / .env. Anything left unset
+# falls back to a sensible default; see .env.example for the full list.
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ghcr.io/codebykyle/website_codebykyle:latest
+    container_name: codebykyle-web
+    restart: unless-stopped
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      # Public site URL (used for OG images, RSS absolute URLs, etc.)
+      NUXT_PUBLIC_SITE_URL: ${NUXT_PUBLIC_SITE_URL:-http://localhost:3000}
+
+      # Contact-form SMTP. If NUXT_SMTP_HOST is unset the endpoint just logs
+      # messages to stdout and returns ok, so local dev works without setup.
+      NUXT_SMTP_HOST: ${NUXT_SMTP_HOST:-}
+      NUXT_SMTP_PORT: ${NUXT_SMTP_PORT:-587}
+      NUXT_SMTP_USER: ${NUXT_SMTP_USER:-}
+      NUXT_SMTP_PASS: ${NUXT_SMTP_PASS:-}
+      NUXT_SMTP_SECURE: ${NUXT_SMTP_SECURE:-}
+      NUXT_CONTACT_TO: ${NUXT_CONTACT_TO:-blog@codebykyle.com}
+      NUXT_CONTACT_FROM: ${NUXT_CONTACT_FROM:-}
+
+      # Newsletter signups. Logged and acknowledged when the key is unset.
+      NUXT_MAILERLITE_API_KEY: ${NUXT_MAILERLITE_API_KEY:-}
+      NUXT_MAILERLITE_GROUP: ${NUXT_MAILERLITE_GROUP:-codebykyle}
+    healthcheck:
+      test: [ "CMD", "wget", "-q", "--spider", "http://127.0.0.1:3000/" ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s

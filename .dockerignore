@@ -1,0 +1,29 @@
+# Build output we never want to ship into the image; the Dockerfile rebuilds.
+node_modules
+.nuxt
+.output
+.data
+
+# VCS / IDE / OS noise
+.git
+.github
+.gitignore
+.idea
+.vscode
+.DS_Store
+Thumbs.db
+
+# Logs / local secrets / lockfiles we don't need at build
+*.log
+.env
+.env.*
+!.env.example
+.eslintcache
+.pnpm-store
+
+# Docs don't affect the image
+README.md
+LICENSE
+docker-compose.yml
+Dockerfile
+.dockerignore

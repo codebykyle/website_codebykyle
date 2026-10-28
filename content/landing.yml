@@ -1,0 +1,116 @@
+seo:
+  title: "@codebykyle: open source software for small businesses"
+  description: "Web developer building open source tools for small businesses. Notes on code, business, and whatever else is on my mind."
+hero:
+  title:
+    - { text: "@", kind: "at" }
+    - { text: "codebykyle", kind: "plain" }
+    - { text: "\n", kind: "plain" }
+    - { text: "ships software", kind: "plain" }
+    - { text: "\n", kind: "plain" }
+    - { text: "for ", kind: "plain" }
+    - { text: "small", kind: "cyan" }
+    - { text: " businesses.", kind: "plain" }
+  sub: "My personal site. I work in **open source**, building business software that small businesses can host, own, and run themselves. You'll find some writing, a few projects of my own, and a feed of things I find worth sharing."
+sections:
+  about:
+    title: "About"
+    description: "The short version. Who I am and what I do."
+    color: "indigo"
+  fieldNotes:
+    title: "Writing"
+    description: "Notes on code, business, design, and whatever else I'm thinking about."
+    color: "pink"
+  newsletter:
+    title: "Newsletter"
+    description: "An occasional letter, only when something actually works."
+    color: "indigo"
+  workshop:
+    title: "Personal Projects"
+    description: "Things I've built, broken, or am still figuring out. Open source projects and a few small tools."
+    color: "orange"
+  repositories:
+    title: "Repositories"
+    description: "Open source projects I am involved with."
+    color: "green"
+  tools:
+    title: "Tools"
+    description: "Browser-based tools I keep in a tab. None of them mine, all of them useful."
+    color: "teal"
+  links:
+    title: "Links"
+    description: "Links I thought were worth sharing."
+    color: "purple"
+  contact:
+    title: "Say hi"
+    description: "Real email, I read it. Reply to most within a few days."
+    color: "teal"
+topics:
+  items:
+    - { name: "Odoo", tag: "odoo", color: "indigo" }
+    - { name: "Web", tag: "web", color: "green" }
+about:
+  headline: "Hi, I'm Kyle Shovan"
+  body: "I'm a web developer. My day job is at Adomi, where I build open-source software that small businesses can own, host anywhere, and run themselves. This website is where I write about code, business, the projects I'm building, hobbies, the dog, and whatever else I'm thinking about."
+callouts:
+  adomi:
+    eyebrow: "FROM THE DAY JOB"
+    headline: "Need help with your small business’s software?"
+    body: "Adomi delivers modern open-source business software including CRM, ERP, identity, and automation. It's affordable, easy to run, and yours to keep. No vendor lock-in. Runs on any cloud, or your own hardware."
+    ctaLabel: "See Adomi’s work"
+    ctaHref: "https://github.com/adomi-io"
+    external: true
+    color: "orange"
+  contact:
+    eyebrow: "OPEN FOR NEW WORK"
+    headline: "Got a project in mind?"
+    body: "Quick conversations beat long forms. Drop me a line and I'll get back to you within a couple of days."
+    ctaLabel: "Get in touch"
+    ctaHref: "#contact"
+    color: "teal"
+  about:
+    eyebrow: "ABOUT"
+    headline: "Curious who's writing this?"
+    body: "I'm Kyle, a web developer building open source software for small businesses. This site is where I write about whatever's on my mind."
+    ctaLabel: "More about me"
+    ctaHref: "/#about"
+    color: "indigo"
+  feedback:
+    eyebrow: "HAVE THOUGHTS?"
+    headline: "Let me know what you think."
+    body: "Disagree, want to add to the conversation, or just say hi? I read every email and reply to most within a few days."
+    ctaLabel: "Send a note"
+    ctaHref: "/#contact"
+    color: "teal"
+newsletter:
+  eyebrow: ""
+  headlinePre: "The latest from the "
+  headlineHand: "workshop"
+  headlinePost: ", in your inbox."
+  body: "Posts on what I'm building, lessons from running open-source software for small businesses, and notes on whatever else I'm thinking about. Or follow the blog via"
+  rssHref: "#rss"
+  placeholder: "email@example.com"
+  buttonLabel: "Subscribe"
+  fineprint: "Unsubscribe anytime"
+  confirmation: "✓ You're subscribed. Thanks for signing up."
+contact:
+  eyebrow: "GET IN TOUCH"
+  color: "teal"
+  headline: "Got a project, a question, or something to share?"
+  body: "Drop a line. I read everything and reply to most. For freelance work, the more context you can pack in up front, the faster I can give you a useful answer."
+  namePlaceholder: "Your name"
+  emailPlaceholder: "you@example.com"
+  messagePlaceholder: "Tell me what you're working on…"
+  buttonLabel: "Send message"
+  sendingLabel: "Sending…"
+  successHeadline: "✓ Message received."
+  successBody: "I'll get back to you within a couple of days. Usually sooner."
+  errorFallback: "Something broke on the way out. Try again, or email blog@codebykyle.com directly."
+footblock:
+  brand: "@codebykyle"
+  tagline: "Open-source software for small businesses."
+  elsewhere:
+    - { label: "GitHub", href: "https://github.com/codebykyle", external: true }
+    - { label: "RSS", href: "#rss" }
+    - { label: "Email", href: "mailto:blog@codebykyle.com" }
+  copyright: "© 2026 Kyle Shovan"
