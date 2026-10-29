@@ -58,7 +58,7 @@ callouts:
     headline: "Need help with your small business’s software?"
     body: "Adomi delivers modern open-source business software including CRM, ERP, identity, and automation. It's affordable, easy to run, and yours to keep. No vendor lock-in. Runs on any cloud, or your own hardware."
     ctaLabel: "See Adomi’s work"
-    ctaHref: "https://github.com/adomi-io"
+    ctaHref: "https://www.adomisoftware.com"
     external: true
     color: "orange"
   contact:
